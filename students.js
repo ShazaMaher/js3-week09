@@ -25,8 +25,9 @@ function StudentsFactory(array_init=[], room_init){
         array_init.splice(0,array_init.length);
     }
 
-    const changeRoom = (room) =>{
-        room_init = room;
+    const changeRoom = (Sroom) =>{
+        room_init = Sroom;
+        console.log(room_init);
     }
    const obj = {
        add:add,
@@ -53,7 +54,7 @@ console.log(students.array);
 students.printAll();
 
 students.changeRoom('3b');
-console.log(students.room);
+
 
 students.Delete('Younes');
 console.log(students.array);
